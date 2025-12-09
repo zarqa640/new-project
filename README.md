@@ -1,41 +1,48 @@
-# Website
+# Physical AI Humanoid Robotics
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This repository contains the source code for the Physical AI Humanoid Robotics documentation site built with Docusaurus.
 
-## Installation
+## About
 
-```bash
-yarn
-```
+This project provides comprehensive documentation for developing humanoid robotics systems using AI, ROS 2, and related technologies. The documentation covers:
 
-## Local Development
-
-```bash
-yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
-
-```bash
-yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+- Module 1: The Robotic Nervous System (ROS 2)
+- Module 2: The Digital Twin (Gazebo & Unity)
+- Module 3: The AI-Robot Brain (NVIDIA Isaac)
+- Module 4: Vision-Language-Action (VLA)
 
 ## Deployment
 
-Using SSH:
+This site is ready for deployment to Vercel. See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed instructions.
 
-```bash
-USE_SSH=true yarn deploy
-```
+### Quick Deploy to Vercel
 
-Not using SSH:
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/zarqa640/new-project)
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
+### Local Development
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Start local development server:
+   ```bash
+   npm start
+   ```
+
+3. Build for production:
+   ```bash
+   npm run build
+   ```
+
+## Configuration Files
+
+- `docusaurus.config.js` - Main Docusaurus configuration
+- `sidebars.js` - Navigation sidebar structure
+- `vercel.json` - Vercel deployment configuration
+- `package.json` - Project dependencies and scripts
+
+## Contributing
+
+To contribute to the documentation, simply create or edit markdown files in the appropriate directories following the existing structure.
