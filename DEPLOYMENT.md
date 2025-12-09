@@ -45,7 +45,7 @@ This guide will help you deploy your Docusaurus site to Vercel.
 
 This repository includes:
 
-- `vercel.json` - Configuration for Vercel deployment
+- `vercel.json` - Configuration for Vercel deployment (corrected to avoid route conflicts)
 - `docusaurus.config.js` - Docusaurus configuration
 - `package.json` - Project dependencies and scripts
 - `sidebars.js` - Navigation sidebar configuration
@@ -66,6 +66,9 @@ This repository includes:
 **Issue**: Build fails
 - **Solution**: Check that all dependencies are properly specified in package.json
 - Ensure Node.js version requirements are met (>=20.0 as specified in package.json)
+
+**Issue**: If you encounter route configuration errors like "If `rewrites`, `redirects`, `headers`, `cleanUrls` or `trailingSlash` are used, then `routes` cannot be present"
+- **Solution**: This has been fixed in the current `vercel.json` configuration
 
 ## Environment Variables
 
